@@ -1,0 +1,21 @@
+﻿【API Token】
+名称: test
+ID:89042
+Token:fa2b65887bece4bf8333d667c6159175
+
+// API文档
+https://www.dnspod.cn/docs/index.html
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// 获取账户信息
+curl -X POST https://dnsapi.cn/User.Detail -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml'
+
+// 获取记录信息
+curl -X POST https://dnsapi.cn/Record.Info -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml&domain=misdstudio.com&record_id=396453969'
+
+// 记录列表
+curl -X POST https://dnsapi.cn/Record.List -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml&domain=misdstudio.com'
+
+// 修改记录
+curl -X POST https://dnsapi.cn/Record.Modify -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&domain=misdstudio.com&record_id=396453969&sub_domain=www&record_type=A&record_line=默认&value=10.1.1.1&mx'
+
