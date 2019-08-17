@@ -10,12 +10,12 @@ CHttps::~CHttps()
 	curl_global_cleanup();
 }
 
-std::string CHttps::SendRecv(const std::string & _szCurl, const std::list<std::pair<std::string, std::string>> &_liParam)
+std::string CHttps::SendRecv(const std::string & _szCurl, const std::list<std::pair<std::string, std::string>> &_liParam, const bool _SSLVerifypeer)
 {
 	CURL* pCurl = curl_easy_init();
 	CURLcode code;
 	code = curl_easy_setopt(pCurl, CURLOPT_URL, _szCurl.c_str());
-	code = curl_easy_setopt(pCurl, CURLOPT_SSL_VERIFYPEER, false);
+	if(_SSLVerifypeer)code = curl_easy_setopt(pCurl, CURLOPT_SSL_VERIFYPEER, false);
 	code = curl_easy_setopt(pCurl, CURLOPT_POST, true);
 	code = curl_easy_setopt(pCurl, CURLOPT_WRITEFUNCTION, Recvice);
 
@@ -31,7 +31,7 @@ std::string CHttps::SendRecv(const std::string & _szCurl, const std::list<std::p
 		}
 	}
 	code = curl_easy_setopt(pCurl, CURLOPT_HTTPPOST, pFormPos);
-
+	RecviceMsg = "";
 	code = curl_easy_perform(pCurl);
 	curl_easy_cleanup(pCurl);
 
@@ -53,6 +53,6 @@ bool CHttps::SetParam(curl_httppost ** _pFormPos, curl_httppost ** _pLastPtr, st
 
 size_t CHttps::Recvice(void * _pData, size_t _nSize, size_t _nMemb, void * _pStream)
 {
-	RecviceMsg = (char*)_pData;
+	RecviceMsg += (char*)_pData;
 	return _nMemb;
 }

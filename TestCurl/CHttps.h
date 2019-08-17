@@ -1,11 +1,11 @@
 #ifndef C_HTTPS_H
 #define C_HTTPS_H
 
-#include "curl/curl.h"
+#include "curl.h"
 #include <string>
 #include <tuple>
 #include <list>
-#pragma comment(lib, "libcurl.lib")
+#pragma comment(lib, "LIBCURL.lib")
 
 static std::string RecviceMsg;
 
@@ -17,7 +17,8 @@ public:
 
 	std::string SendRecv(
 		const std::string& _szCurl, 
-		const std::list<std::pair<std::string, std::string>>& _liParam);
+		const std::list<std::pair<std::string, std::string>>& _liParam, 
+		const bool _SSLVerifypeer = true);
 
 protected:
 	bool SetParam(
