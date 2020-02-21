@@ -18,12 +18,18 @@
     <ClInclude Include="CHttps.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CWork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TestCurl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CHttps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

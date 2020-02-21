@@ -1,11 +1,17 @@
 #ifndef C_HTTPS_H
 #define C_HTTPS_H
 
+#ifdef _WIN32
+#include "curl-7.65.3-win64-mingw/include/curl/curl.h"
+#pragma comment(lib, "LIBCURL.lib")
+#else
 #include "curl.h"
+#endif // WIN32
+
 #include <string>
 #include <tuple>
 #include <list>
-#pragma comment(lib, "LIBCURL.lib")
+
 
 static std::string RecviceMsg;
 

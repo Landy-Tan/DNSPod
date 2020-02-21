@@ -109,12 +109,12 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Users\xuela\Documents\MyCode\GitHub\0.MyProject\DNSPod-动态域名解析\TestCurl\curl-7.65.3-win64-mingw\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Project\My project\DNSPod-\TestCurl\curl-7.65.3-win64-mingw\include\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\xuela\Documents\MyCode\GitHub\0.MyProject\DNSPod-动态域名解析\TestCurl\curl-7.65.3-win64-mingw\lib;C:\Users\xuela\Documents\MyCode\GitHub\0.MyProject\DNSPod-动态域名解析\TestCurl\curl-7.65.3-win64-mingw\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -157,9 +157,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CHttps.h" />
+    <ClInclude Include="CWork.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CHttps.cpp" />
+    <ClCompile Include="CWork.cpp" />
     <ClCompile Include="TestCurl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
