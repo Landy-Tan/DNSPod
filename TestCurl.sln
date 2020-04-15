@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCurl", "TestCurl\TestCurl.vcxproj", "{6E08B41C-2B01-43CE-A2C5-DA303CB53D5E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestCurl", "src\TestCurl.vcxproj", "{6E08B41C-2B01-43CE-A2C5-DA303CB53D5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

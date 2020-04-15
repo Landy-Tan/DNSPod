@@ -1,21 +1,18 @@
-﻿【API Token】
-名称: test
-ID:89042
-Token:fa2b65887bece4bf8333d667c6159175
+﻿
 
 // API文档
 https://www.dnspod.cn/docs/index.html
 
 /////////////////////////////////////////////////////////////////////////////////////////
 // 获取账户信息
-curl -X POST https://dnsapi.cn/User.Detail -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml'
+curl -X POST https://dnsapi.cn/User.Detail -d 'login_token=【DNSPod.conf配置文件ID字段】,【NSPod.conf配置文件Password字段】&format=xml'
 
 // 获取记录信息
-curl -X POST https://dnsapi.cn/Record.Info -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml&domain=misdstudio.com&record_id=396453969'
+curl -X POST https://dnsapi.cn/Record.Info -d 'login_token=【DNSPod.conf配置文件ID字段】,【DNSPod.conf配置文件Password字段】&format=xml&domain=【DNSPod.conf配置文件Domain字段】&record_id=【DNSPod.conf配置文件RecordID字段】'
 
 // 记录列表
-curl -X POST https://dnsapi.cn/Record.List -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&format=xml&domain=misdstudio.com'
+curl -X POST https://dnsapi.cn/Record.List -d 'login_token=【DNSPod.conf配置文件ID字段】,【DNSPod.conf配置文件Password字段】&format=xml&domain=【DNSPod.conf配置文件Domain字段】'
 
 // 修改记录
-curl -X POST https://dnsapi.cn/Record.Modify -d 'login_token=89042,fa2b65887bece4bf8333d667c6159175&domain=misdstudio.com&record_id=396453969&sub_domain=www&record_type=A&record_line=默认&value=10.1.1.1&mx'
+curl -X POST https://dnsapi.cn/Record.Modify -d 'login_token=【DNSPod.conf配置文件ID字段】,【DNSPod.conf配置文件Password字段】&domain=【DNSPod.conf配置文件Domain字段】&record_id=【DNSPod.conf配置文件RecordID字段】&sub_domain=【DNSPod.conf配置文件SubDomain字段】&record_type=【DNSPod.conf配置文件RecordType字段】&record_line=默认&value=10.1.1.1&mx'
 

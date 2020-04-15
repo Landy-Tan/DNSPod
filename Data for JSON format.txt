@@ -21,7 +21,7 @@ User info:
 			"email":"qcloud_uin_100006366508@qcloud.com",
 			"qq":"100006366508",
 			"status":"enabled",
-			"telephone":"13128615271",
+			"telephone":"",
 			"email_verified":"yes",
 			"telephone_verified":"yes",
 			"user_grade":"DP_Free",
@@ -44,8 +44,8 @@ Record list:
 	"domain":
 	{
 		"id":"70182752",
-		"name":"misdstudio.com",
-		"punycode":"misdstudio.com",
+		"name":"此处的值填入到DNSPod.conf配置文件Domain字段",
+		"punycode":"此处的值填入到DNSPod.conf配置文件Domain字段",
 		"grade":"DP_Free",
 		"owner":"qcloud_uin_100006366508@qcloud.com",
 		"ext_status":"",
@@ -69,7 +69,7 @@ Record list:
 	"records":
 	[
 		{
-			"id":"396453821",
+			"id":"此处的值填入到DNSPod.conf配置文件RecordID字段",
 			"ttl":"86400",
 			"value":"f1g1ns1.dnspod.net.",
 			"enabled":"1",
@@ -87,7 +87,7 @@ Record list:
 			"hold":"hold"
 		},
 		{
-			"id":"396453822",
+			"id":"此处的值填入到DNSPod.conf配置文件RecordID字段",
 			"ttl":"86400",
 			"value":"f1g1ns2.dnspod.net.",
 			"enabled":"1",
@@ -105,13 +105,13 @@ Record list:
 			"hold":"hold"
 		},
 		{
-			"id":"396453969",
+			"id":"此处的值填入到DNSPod.conf配置文件RecordID字段",
 			"ttl":"600",
 			"value":"10.1.1.1",
 			"enabled":"1",
 			"status":"enabled",
 			"updated_on":"2019-03-28 19:25:37",
-			"name":"www",
+			"name":"此处的值填入到DNSPod.conf配置文件SubDomain字段",
 			"line":"\u9ed8\u8ba4",
 			"line_id":"0",
 			"type":"A",
@@ -136,17 +136,17 @@ Record info:
 	"domain":
 	{
 		"id":"70182752",
-		"domain":"misdstudio.com",
+		"domain":"此处的值填入到DNSPod.conf配置文件Domain字段",
 		"domain_grade":"DP_Free"
 	},
 
 	"record":
 	{
-		"id":"396453969",
-		"sub_domain":"www",
-		"record_type":"A",
+		"id":"此处的值填入到DNSPod.conf配置文件RecordID字段",
+		"sub_domain":"此处的值填入到DNSPod.conf配置文件SubDomain字段",
+		"record_type":"此处的值填入到DNSPod.conf配置文件RecordType字段",
 		"record_line":"\u9ed8\u8ba4",
-		"record_line_id":"0",
+		"record_line_id":"此处的值填入到DNSPod.conf配置文件RecordLineId字段",
 		"value":"10.1.1.1",
 		"weight":null,
 		"mx":"0",

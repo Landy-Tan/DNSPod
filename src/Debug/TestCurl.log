@@ -1,0 +1,9 @@
+﻿  CLocalAddress.cpp
+d:\project\me\dnspod-_v1.0\src\cwork.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  CWork.cpp
+d:\project\me\dnspod-_v1.0\src\cwork.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\project\me\dnspod-_v1.0\src\cwork.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  main.cpp
+d:\project\me\dnspod-_v1.0\src\cwork.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  TestCurl.vcxproj -> D:\Project\Me\DNSPod-_V1.0\Debug\TestCurl.exe
