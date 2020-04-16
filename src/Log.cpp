@@ -21,9 +21,9 @@ __DNSPOD_BEGIN
      char tmp[8192*10] = { 0 };  
      va_list va;
            //定义一个va_list型的变量,这个变量是指向参数的指针.  
-     va_start(va, pszFmt);
+   va_start(va, pszFmt);
            //用va_start宏初始化变量,这个宏的第二个参数是第一个可变参数的前一个参数,是一个固定的参数  
-     sprintf(tmp, pszFmt, va);
+     sprintf(tmp, pszFmt, va_arg(va, const char*));
            //注意,不要漏掉前面的_  
      va_end(va);  
  
@@ -44,7 +44,7 @@ __DNSPOD_BEGIN
                  pszFile,  
                  lineNo,  
                  pszFuncSig,  
-                 tmp);  
+		 tmp);
  
 #ifdef _DEBUG
 	 std::cout << content;

@@ -4,7 +4,8 @@
 using namespace std;
 using namespace __DNSPOD;
 
-int main()
+
+void StartUp()
 {
 	Singleton<CLocalAddress>::Instance();
 	Singleton<CWork>::Instance();
@@ -15,6 +16,23 @@ int main()
 #else
 		sleep(60 * 30);
 #endif // _WIN32
+	}
+}
+
+int main(int argc, char *argv[])
+{
+	if (argc < 2) {
+		StartUp();
+	}
+	else if (strcmp(argv[1], "-b") == 0 ||
+		strcmp(argv[1], "-B") == 0) 
+	{
+#ifdef _LINUX
+		if (fork() == 0)
+		{
+			StartUp();
+		}
+#endif 
 	}
 	return 0;
 }

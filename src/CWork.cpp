@@ -13,7 +13,6 @@ CWork::CWork()
 		LogError("Work config error");
 		return;
 	}
-	Start();
 }
 
 CWork::~CWork()

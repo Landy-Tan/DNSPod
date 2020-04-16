@@ -14,8 +14,6 @@ CLocalAddress::CLocalAddress()
 	curl_easy_setopt(m_curl.get(), CURLOPT_DEFAULT_PROTOCOL, "https");
 	curl_easy_setopt(m_curl.get(), CURLOPT_HTTPHEADER, NULL);
 	curl_easy_setopt(m_curl.get(), CURLOPT_WRITEFUNCTION, CHttps::Recvice);
-
-	Start();
 }
 
 const std::string & CLocalAddress::GetIP() const
