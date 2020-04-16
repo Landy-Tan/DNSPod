@@ -52,6 +52,9 @@ namespace DNSPod {
 #pragma comment(lib, "LIBCURL.lib")
 #else
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdarg.h>
 #endif _WIN32
 
 

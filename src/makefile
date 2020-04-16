@@ -1,9 +1,19 @@
 TargetName := DNSPod
-Sources := $(shell ls *.cpp)
+SourcePath := . jsoncpp/src/lib_json
+Sources := $(foreach var, $(SourcePath), $(wildcard $(var)/*.cpp))
 Headers := $(shell ls *.cpp)
-IncludePath := /usr/include/curl
+IncludePath := curl/include jsoncpp/include
 LibPath := /usr/bin
 Libs := curl
 
-DNS : $(Sources)
-	g++ -std=c++11 -g -o $(TargetName) $(Sources) -I$(IncludePath) -l$(Libs)
+$(TargetName) : $(Sources)
+	g++ -std=c++11 -g -o $(TargetName) $(Sources) -I curl/include -I jsoncpp/include -L$(LibPath) -l$(Libs)
+
+Sources : 
+	echo $(Sources)
+
+SourcePath : 
+	echo $(SourcePath)
+
+Wildcard :
+	echo $(wildcard $(SourcePath)/*.cpp)
