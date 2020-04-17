@@ -40,7 +40,7 @@ void CLocalAddress::Process()
 #ifdef _WIN32
 	Sleep(60 * 1000);
 #else
-	sleep(60 * 30);
+	sleep(60);
 #endif // _WIN32
 
 

@@ -7,8 +7,8 @@ using namespace __DNSPOD;
 
 void StartUp()
 {
-	Singleton<CLocalAddress>::Instance();
-	Singleton<CWork>::Instance();
+	Singleton<CLocalAddress>::Instance().Start();
+	Singleton<CWork>::Instance().Start();
 	while (1)
 	{
 #ifdef _WIN32

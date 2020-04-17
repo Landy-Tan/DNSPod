@@ -12,6 +12,7 @@
 #define PCH_H
 
 #define _CRT_SECURE_NO_WARNINGS
+#define _DEBUG
 
 #ifndef __DNSPOD
 #define __DNSPOD tlproj::DNSPod
