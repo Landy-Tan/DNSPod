@@ -1,15 +1,15 @@
-´ËÏîÄ¿ÊÇÎªÁË½â¾ö½«±¾µØ¹«ÍøIPµØÖ·ÉÏ´«µ½ÔÆ½âÎö·þÎñÆ÷£¬ÒÔÊµÏÖ¶¯Ì¬ÓòÃû½âÎö¡£
+æ­¤é¡¹ç›®æ˜¯ä¸ºäº†è§£å†³å°†æœ¬åœ°å…¬ç½‘IPåœ°å€ä¸Šä¼ åˆ°äº‘è§£æžæœåŠ¡å™¨ã€‚
 
-¹ØÓÚDNSPod.confÎÄ¼þ
-´ËÎÄ¼þÊÇ±¾³ÌÐòµÄÅäÖÃÎÄ¼þ£¬Çë½«Ïà¹Ø²ÎÊýÌîÈëµ½¸÷¸ö×Ö¶Î¡£·ñÔò³ÌÐò²»ÄÜÕý³£ÉÏ´«
+å…³äºŽDNSPod.confæ–‡ä»¶
+æ­¤æ–‡ä»¶æ˜¯æœ¬ç¨‹åºçš„é…ç½®æ–‡ä»¶ï¼Œè¯·å°†ç›¸å…³å‚æ•°å¡«å…¥åˆ°å„ä¸ªå­—æ®µã€‚å¦åˆ™ç¨‹åºä¸èƒ½æ­£å¸¸ä¸Šä¼ 
 [
 	{
-		"Domain" : "ÍøÖ·,×¢Òâ²»´øÇ°×º£¬ÀýÈçbaidu.com",
-		"ID" : "dnspodÕËºÅ",
-		"Password" : "dnspodÃÜÂë",
-		"RecordID" : "¼ÇÂ¼ID",
+		"Domain" : "ç½‘å€,æ³¨æ„ä¸å¸¦å‰ç¼€ï¼Œä¾‹å¦‚baidu.com",
+		"ID" : "dnspodè´¦å·",
+		"Password" : "dnspodå¯†ç ",
+		"RecordID" : "è®°å½•ID",
 		"RecordLineId" : "0",
-		"RecordType" : "¼ÇÂ¼ÀàÐÍ",
-		"SubDomain" : "ÍøÖ·Ç°×º£¬ÀýÈçwww"
+		"RecordType" : "è®°å½•ç±»åž‹",
+		"SubDomain" : "ç½‘å€å‰ç¼€ï¼Œä¾‹å¦‚www"
 	}
 ]
